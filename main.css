@@ -1,0 +1,42 @@
+body{
+	margin: 0;
+	/*background-color: darkslategrey;*/
+	background-image: url("images/coronabg.jpg");
+
+
+}
+	div.header{
+	background-image: url("images/corona.png");
+	
+}
+ul.top{
+	list-style-type: none;
+	padding: 0;
+	margin-top: 0;
+	margin-left: 45%;
+	overflow: hidden;
+}
+li.top{
+	float: left;
+}
+a{
+	display: block;
+	padding: 5px;
+	margin-top: 15px;
+	position: relative;
+	background-color: darkcyan;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+}
+a:hover{
+	background-color: slategrey;
+}
+img.slides{
+	border-radius: 15px;
+}
+div.img{
+	max-width: 700px;
+
+}
