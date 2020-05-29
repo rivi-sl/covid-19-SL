@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>covid19-SL</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="header">
+		<center><font size="16px" color="#ADD8E6"><b>COVID 19</b></font></center>
+	<ul class="top">
+		<li class="top"><a href="#">Home</a></li>
+		<li class="top"><a href="#">#</a></li>
+		<li class="top"><a href="#">#</a></li>
+	</ul></div>
+	<center>
+	<div class="img">
+		<img class="slides" src="images\pic1.jpg" style="width:100%">
+		<img class="slides" src="images\pic2.jpg" style="width:100%">
+		<img class="slides" src="images\pic3.png" style="width:100%">
+	</div></center>
+	<script>
+		var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);
+}
+	</script>
+
+</body>
+</html>
