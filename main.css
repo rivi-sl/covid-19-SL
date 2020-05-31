@@ -1,9 +1,14 @@
+html{height: 100% ;}
 body{
+	height: 100%;
 	margin: 0;
 	/*background-color: darkslategrey;*/
 	background-image: url("images/coronabg.jpg");
 
 
+}
+.content{
+	min-height: 100%;
 }
 	div.header{
 	background-image: url("images/corona.png");
@@ -19,7 +24,8 @@ ul.top{
 li.top{
 	float: left;
 }
-a{
+.content .header ul a{
+
 	display: block;
 	padding: 5px;
 	margin-top: 15px;
@@ -30,13 +36,86 @@ a{
 	font-size: 16px;
 	text-align: center;
 }
-a:hover{
+.content .header ul a:hover{
 	background-color: slategrey;
 }
 img.slides{
 	border-radius: 15px;
+	padding-bottom: 20px;
 }
 div.img{
 	max-width: 700px;
 
 }
+
+/*============footer============*/
+
+.footer {
+	background:  #497678;
+	color: #c1e2e3;
+	height:230px;
+	position: relative;
+
+}
+.footer .footer-content{
+	
+	height:200px;
+	display: flex;
+}
+
+.footer .footer-content .footer-section {
+flex:1;
+padding: 20px;
+
+color :#8d9ab5;
+}
+
+
+.footer .footer-content .contact .contact-us span {
+display: block;
+font-size: 20px;
+margin-bottom: 5px;
+}
+.footer .footer-content .about .design ul {
+	columns: 2;
+	column-gap:100px;
+	padding-right: 0;
+	font-size: 17px
+	
+
+}
+.footer .footer-content .contact .social-media a {
+	border: 1px solid gray;
+	width: 45px;
+	height: 38px;
+	border-radius: 5px;
+	margin-right: 5px;
+    padding-top: 8px;
+	font-size:30px;
+	display: inline-block;
+	text-align: center;
+
+
+}
+.footer .footer-content .contact .social-media a:hover {
+	border: 1px solid white;
+	font-size:32px;
+
+
+}
+.footer .footer-content .contact {
+	text-align: center;
+}
+
+ .footer-bottom{
+	background: #315a5c;
+	color: #76a7a8;
+	height: 20px;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 8px;
+}
+
