@@ -1,9 +1,7 @@
 body{
 	height: 100%;
 	margin: 0;
-	/*background-color: darkslategrey;*/
 	background-image: url("images/coronabg.jpg");
-
 
 }
 
@@ -69,7 +67,7 @@ div.footer {
 	color: #c1e2e3;
 	height:58px;
 	width: 100%;
-	bottom: 20px;
+	bottom:8px;
 	left: 0px;
 	position: fixed;
 	padding-top: 3px;
@@ -101,6 +99,6 @@ div.footer-names{
 	width: 100%;
 	bottom: 0px;
 	left: 0px;
-	padding-top: 8px;
+	padding-top: 0px;
 }
 
