@@ -2,7 +2,7 @@ body{
 	height: 100%;
 	margin: 0;
 	background-image: url("images/coronabg.jpg");
-
+	opacity: 0.5 ;
 }
 
 div.header{
@@ -53,6 +53,7 @@ ul a:hover{
 img.slides{
 	border-radius: 15px;
 	padding-bottom: 20px;
+	
 }
 div.img{
 	max-width: 700px;
