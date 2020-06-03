@@ -3,15 +3,15 @@ body{
 	height: 100%;
 	margin: 0;
 	/*background-color: darkslategrey;*/
-	background-image: url("images/coronabg.jpg");
-
-
+	background-image: url("images/coronabg.jpg" ) ;
+	opacity: 0.5;
 }
+
 .content{
 	min-height: 100%;
 }
 	div.header{
-	background-image: url("images/corona.png");
+	background-image: url("images/corona.png") ;
 	
 }
 ul.top{
@@ -37,11 +37,13 @@ li.top{
 	text-align: center;
 }
 .content .header ul a:hover{
-	background-color: slategrey;
+	background-color: slategrey ;
+	
 }
 img.slides{
 	border-radius: 15px;
 	padding-bottom: 20px;
+	
 }
 div.img{
 	max-width: 700px;
