@@ -1,30 +1,41 @@
-html{height: 100% ;}
 body{
 	height: 100%;
 	margin: 0;
-	/*background-color: darkslategrey;*/
-	background-image: url("images/coronabg.jpg" ) ;
-	opacity: 0.5;
+	background-image: url("images/coronabg.jpg");
+	opacity: 0.5 ;
 }
 
-.content{
-	min-height: 100%;
+div.header{
+	background-image: url("images/corona.png");	
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	width: 100%;
+
 }
-	div.header{
-	background-image: url("images/corona.png") ;
-	
+
+div.header-content{
+	padding-bottom: 2%;
+}
+
+div.header-nav{
+	top: 54px;
+	left: 0px;
+	width: 100%;
+	position: fixed;
 }
 ul.top{
 	list-style-type: none;
 	padding: 0;
 	margin-top: 0;
+	margin-bottom: 0px;
 	margin-left: 45%;
 	overflow: hidden;
 }
 li.top{
 	float: left;
 }
-.content .header ul a{
+ul a{
 
 	display: block;
 	padding: 5px;
@@ -36,9 +47,8 @@ li.top{
 	font-size: 16px;
 	text-align: center;
 }
-.content .header ul a:hover{
-	background-color: slategrey ;
-	
+ul a:hover{
+	background-color: slategrey;
 }
 img.slides{
 	border-radius: 15px;
@@ -47,77 +57,49 @@ img.slides{
 }
 div.img{
 	max-width: 700px;
+	margin-top: 14%;
 
 }
 
 /*============footer============*/
 
-.footer {
+div.footer {
 	background:  #497678;
 	color: #c1e2e3;
-	height:230px;
-	position: relative;
+	height:58px;
+	width: 100%;
+	bottom:8px;
+	left: 0px;
+	position: fixed;
+	padding-top: 3px;
+	font-size: 13px;
 
 }
-.footer .footer-content{
+ul.footer{
+	list-style-type: none;
+	margin-left: 5px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
 	
-	height:200px;
-	display: flex;
-}
-
-.footer .footer-content .footer-section {
-flex:1;
-padding: 20px;
-
-color :#8d9ab5;
-}
-
-
-.footer .footer-content .contact .contact-us span {
-display: block;
-font-size: 20px;
-margin-bottom: 5px;
-}
-.footer .footer-content .about .design ul {
-	columns: 2;
-	column-gap:100px;
-	padding-right: 0;
-	font-size: 17px
-	
+div.footer-content{
+	margin-left: 5px;
+	padding-bottom: 0px;
 
 }
-.footer .footer-content .contact .social-media a {
-	border: 1px solid gray;
-	width: 45px;
-	height: 38px;
-	border-radius: 5px;
-	margin-right: 5px;
-    padding-top: 8px;
-	font-size:30px;
-	display: inline-block;
-	text-align: center;
-
-
-}
-.footer .footer-content .contact .social-media a:hover {
-	border: 1px solid white;
-	font-size:32px;
-
-
-}
-.footer .footer-content .contact {
-	text-align: center;
+div.footer-names{
+	margin-bottom: 20px;
 }
 
  .footer-bottom{
-	background: #315a5c;
+	background-color: #315a5c;
 	color: #76a7a8;
 	height: 20px;
 	text-align: center;
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	bottom: 0px;
 	left: 0px;
-	padding-top: 8px;
+	padding-top: 0px;
 }
 
