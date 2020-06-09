@@ -2,7 +2,6 @@ body{
 	height: 100%;
 	margin: 0;
 	background-image: url("images/coronabg.jpg");
-
 }
 
 div.header{
@@ -57,7 +56,43 @@ img.slides{
 div.img{
 	max-width: 700px;
 	margin-top: 14%;
-
+}
+div.data{
+	background-color:rgba(47, 79, 79, 0.89);
+    /*background-image: linear-gradient(to bottom right,rgb(32, 151, 230),rgba(241, 241, 239, 0.815));*/
+	margin-bottom: 100px;
+}
+p.data{
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color:white;
+	font-size: 30px;
+	background-color:rgb(79, 126, 126);
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+ul.data{
+	list-style-type: none;
+	overflow: hidden;
+}
+ul.data li{
+	color: white;
+	background-color: cadetblue;
+	border-radius: 15px;
+	margin-right: 21px;
+	margin-bottom: 15px;
+	padding: 20px;
+	padding-top: 12px;
+	float: left;
+	text-align: center;
+	width: 180px;
+}
+ul.data li div{
+	font-size: 50px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul.data li span{
+	font-size: 22px;
 }
 
 /*============footer============*/

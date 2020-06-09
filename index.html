@@ -6,6 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<meta charset="utf-8">
 	<script src="https://kit.fontawesome.com/0668057c53.js" crossorigin="anonymous"></script>
+	    <!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+	    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
 
@@ -27,11 +34,45 @@
 		<img class="slides" src="images\pic3.png" style="width:100%">
 	</div></center>
 
+	<!--data-->
+	<div class="data">
+		<p class="data">
+			<i class="fas fa-viruses" style="font-size:55px;"></i>
+			Current Situation</p>
+	<ul class="data" id="data">
+		<!--<li class="data" id="data">Total confirmed</li>
+		<li class="data">Deaths</li>-->
+	</ul>
+	</div>
+
+<!--firebase-->
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBWpGv8R95KXGGp94H3Q6-xPZXnC-KfYuI",
+    authDomain: "covid19-sl-a613b.firebaseapp.com",
+    databaseURL: "https://covid19-sl-a613b.firebaseio.com",
+    projectId: "covid19-sl-a613b",
+    storageBucket: "covid19-sl-a613b.appspot.com",
+    messagingSenderId: "628566051115",
+   appId: "1:628566051115:web:e5449a853b9dd5e6a39d6e",
+    measurementId: "G-3MF7VZV1CK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  //db.settings({ timestampsInSnapshots: true});
+  //firebase.analytics();
+</script>
+
+<script src="main.js"></script>
+
+<!--slide show-->
 	<script>
 		var myIndex = 0;
-carousel();
+slides();
 
-function carousel() {
+function slides() {
   var i;
   var x = document.getElementsByClassName("slides");
   for (i = 0; i < x.length; i++) {
@@ -40,7 +81,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000);
+  setTimeout(slides, 2000);
 }
 	</script>
 
