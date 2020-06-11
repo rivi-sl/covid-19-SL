@@ -99,7 +99,7 @@ ul.data li{
 	text-align: center;
 	width: 180px;
 }
-ul.par li li{
+ul.par li {
 	color: white;
 	background-color:rgb(63, 151, 101);
 	border-radius: 15px;
@@ -111,14 +111,14 @@ ul.par li li{
 	text-align: center;
 	width: 180px;
 }
-ul.data li div, ul.par li li div{
+ul.data li div, ul.par li div{
 	font-size: 50px;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 ul.data li span{
 	font-size: 22px;
 }
-ul.par li li span{
+ul.par li span{
 	font-size: 22px;
 }
 
